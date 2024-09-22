@@ -12,6 +12,11 @@ Add an alias for 'iamdumb' to your terminal.
 echo "alias iamdumb='python3 $(pwd)/iamdumb.py'" >> ~/.zshrc && source ~/.zshrc
 ```
 
+Alternatively, you may install it via pipx with:
+```
+pipx install git+https://github.com/lmoratti/iamdumb.git@main
+```
+
 Usage:
 ```
 sh-5.2$ iamdumb
