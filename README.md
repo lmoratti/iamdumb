@@ -1,6 +1,8 @@
 # iamdumb
 For when you are trying to figure out why your AWS api called failed.
 
+Prints this diagram in ascii art on your terminal:
+![image](https://docs.aws.amazon.com/images/IAM/latest/UserGuide/images/PolicyEvaluationHorizontal111621.png)
 ```
 python3 ./iamdumb.py 
 ```
