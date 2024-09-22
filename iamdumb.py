@@ -1,19 +1,7 @@
-# iamdumb
-For when you are trying to figure out why your AWS api called failed.
+# echo "alias iamdumb='python3 $(pwd)/iamdumb.py'" >> ~/.zshrc && source ~/.zshrc
 
-```
-python3 ./iamdumb.py 
-```
-
-Add an alias for 'iamdumb' to your terminal.
-```
-echo "alias iamdumb='python3 $(pwd)/iamdumb.py'" >> ~/.zshrc && source ~/.zshrc
-```
-
-Usage:
-```
-sh-5.2$ iamdumb
-
+def display_iam_flowchart_ascii():
+    ascii_flowchart = '''
 +-------------------+
 |  Decision starts   |
 |    with Deny       |
@@ -138,4 +126,8 @@ sh-5.2$ iamdumb
 | Final Decision:    |
 | Allow              |
 +-------------------+
-```
+    '''
+    print(ascii_flowchart)
+
+if __name__ == "__main__":
+    display_iam_flowchart_ascii()
