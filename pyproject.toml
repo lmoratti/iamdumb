@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iamdumb"
+version = "0.1.0"
+description = "For when you are trying to figure out why your AWS api called failed."
+authors = [
+    {name = "Lizzie Morati", email = "morattisec@infosec.exchange"}
+]
+
+[project.scripts]
+iamdumb = "iamdumb:display_iam_flowchart_ascii"
